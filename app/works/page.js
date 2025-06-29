@@ -57,17 +57,22 @@ export default function WorksPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-white px-6 pt-10 pb-20">
-        <h1 className="text-[6rem] font-light leading-none mb-10 text-black" style={{ fontFamily: 'Didot, serif' }}>Works</h1>
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mt-25">
+      <main className="min-h-screen bg-white px-2 sm:px-4 md:px-6 pt-8 sm:pt-10 pb-16 sm:pb-20">
+        <h1
+          className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-6 sm:mb-10 text-black"
+          style={{ fontFamily: 'Didot, serif' }}
+        >
+          Works
+        </h1>
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 sm:gap-4 space-y-2 sm:space-y-4">
           {images.map((src, idx) => (
-            <div key={idx} className="w-full mb-4 break-inside-avoid" data-aos="fade-up">
+            <div key={idx} className="w-full mb-2 sm:mb-4 break-inside-avoid" data-aos="fade-up">
               <Image
                 src={src}
                 alt={`Work ${idx + 1}`}
                 width={600}
                 height={400}
-                className="w-full h-auto rounded-no"
+                className="w-full h-auto rounded-none"
                 style={{ objectFit: 'cover' }}
               />
             </div>

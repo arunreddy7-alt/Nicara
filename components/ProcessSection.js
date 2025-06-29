@@ -3,9 +3,20 @@ import Image from "next/image";
 export default function ProcessSection() {
   return (
     <section className="w-full bg-[#f5f2e9] py-8 px-8">
-      <div className="flex justify-between items-center mb-6">
-        <h2 className="text-5xl font-light uppercase" style={{ fontFamily: 'Didot, serif' }}>PROCESS</h2>
-        <a href="/process" className="text-xl underline font-normal mr-4" style={{ fontFamily: 'Helvetica Neue, serif' }}>View Process</a>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6 w-full">
+        <h2
+          className="font-light text-3xl sm:text-4xl md:text-5xl text-left w-full sm:w-auto"
+          style={{ fontFamily: 'Didot, serif', textTransform: 'none' }}
+        >
+          Process
+        </h2>
+        <a
+          href="/process"
+          className="text-base sm:text-lg md:text-xl underline font-normal mt-2 sm:mt-0 self-end sm:self-auto sm:text-right sm:w-auto"
+          style={{ fontFamily: 'Helvetica Neue, serif' }}
+        >
+          View Process
+        </a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         {/* Row 1 */}
