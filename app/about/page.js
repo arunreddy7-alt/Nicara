@@ -1,4 +1,5 @@
 import FooterSection from "../../components/FooterSection";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -26,23 +27,23 @@ export default function AboutPage() {
           </div>
           <div className="w-full lg:w-2/3 text-black space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl -ml-0 lg:-ml-10" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
             <p className="mb-3 sm:mb-4">The Journey of Nicara</p>
-            <p className="mb-3 sm:mb-4">Nicara was born from a simple yet profound belief—spaces are more than just structures; they are experiences, emotions, and reflections of those who live and work in them.</p>
+            <p className="mb-3 sm:mb-4">Nicara was born from a simple yet profound belief&#39;—spaces are more than just structures; they are experiences, emotions, and reflections of those who live and work in them.</p>
             <p className="mb-3 sm:mb-4">Where It All Began</p>
             <p className="mb-3 sm:mb-4">We started our journey in Madhapur, Hyderabad, with a passion for interior design and architecture, creating bespoke homes, cafes, and hospitality spaces that blended functionality with beauty. Each project was a canvas, and we loved bringing unique visions to life. But as we worked closely with our clients, we noticed a recurring challenge—they often struggled to find the right property before even thinking about design.</p>
             <p className="mb-3 sm:mb-4">Expanding into Property Scouting</p>
             <p className="mb-3 sm:mb-4">We realized that great design starts with the right foundation. A well-located, well-structured property makes all the difference in bringing a vision to life. So, we expanded our services to property scouting, helping our clients find spaces that truly matched their needs—whether a cozy home, a buzzing commercial space, or a serene hospitality retreat.</p>
             <p className="mb-3 sm:mb-4">The Final Touch – Furniture & Styling</p>
-            <p className="mb-3 sm:mb-4">Even after the perfect property was found and beautifully designed, something was missing—the soul of the space. That's when we ventured into furniture and styling, curating handcrafted, sustainable pieces that added warmth, personality, and a touch of Indian artistry.</p>
+            <p className="mb-3 sm:mb-4">Even after the perfect property was found and beautifully designed, something was missing—the soul of the space. That&#39;s when we ventured into furniture and styling, curating handcrafted, sustainable pieces that added warmth, personality, and a touch of Indian artistry.</p>
             <p className="mb-3 sm:mb-4">Where We Are Today</p>
-            <p className="mb-3 sm:mb-4">Today, Nicara is more than just a design and consulting firm—it's a storyteller of spaces. With a strong presence in Hyderabad (Madhapur) and Bangalore (Indiranagar), we bring our expertise, creativity, and passion wherever great opportunities arise.</p>
-            <p className="mb-3 sm:mb-4">We don't just design spaces—we create experiences that last a lifetime. And we'd love to be part of yours.</p>
+            <p className="mb-3 sm:mb-4">Today, Nicara is more than just a design and consulting firm—it&#39;s a storyteller of spaces. With a strong presence in Hyderabad (Madhapur) and Bangalore (Indiranagar), we bring our expertise, creativity, and passion wherever great opportunities arise.</p>
+            <p className="mb-3 sm:mb-4">We don&#39;t just design spaces—we create experiences that last a lifetime. And we&#39;d love to be part of yours.</p>
           </div>
         </section>
         {/* Founders Section */}
         <section className="w-full flex flex-col lg:flex-row items-end justify-between max-w-7xl mx-auto mt-16 sm:mt-20 lg:mt-24 mb-8 sm:mb-10 px-4 sm:px-6 lg:px-0 lg:px-8">
           <div className="w-full lg:w-1/2 flex flex-col items-center mb-8 lg:mb-0">
             <div className="w-full flex justify-center">
-              <img src="/nishanth.jpg" alt="Nishanth P." className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
+              <Image src="/nishanth.jpg" alt="Nishanth P." width={420} height={420} className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
             </div>
             <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Didot, serif' }}>
               Nishanth P.
@@ -50,7 +51,7 @@ export default function AboutPage() {
           </div>
           <div className="w-full lg:w-1/2 flex flex-col items-center">
             <div className="w-full flex justify-center">
-              <img src="/sriniketh.png" alt="Sriniketh P." className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
+              <Image src="/sriniketh.png" alt="Sriniketh P." width={420} height={420} className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
             </div>
             <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Didot, serif' }}>
               Sriniketh P.
