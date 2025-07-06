@@ -1,10 +1,23 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolledUp, setScrolledUp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolledUp(true);
+      } else {
+        setScrolledUp(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Helper to close menu on link click (only in mobile mode)
   const handleLinkClick = () => {
@@ -12,10 +25,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full border-b border-black/60 bg-white flex items-start justify-between px-4 sm:px-14 pt-6 sm:pt-14 pb-4 relative z-50">
+    <nav
+      className={`w-full border-b border-black/60 bg-white flex items-start justify-between px-4 sm:px-14 pt-2 sm:pt-4 pb-2 fixed top-0 z-50 transition-transform duration-300 ease-in-out ${scrolledUp ? '-translate-y-10' : 'translate-y-0'}`}
+    >
       <div className="flex flex-col items-center justify-center" style={{ minWidth: 10 }}>
         <Link href="/">
-          <Image src="/nicara-logo.png" alt="Nicara Logo" width={140} height={120} priority className="mb-3" />
+          <Image src="/nicara-logo.png" alt="Nicara Logo" width={100} height={80} priority className="mb-2" />
         </Link>
       </div>
       {/* Hamburger Icon */}
