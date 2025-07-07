@@ -31,7 +31,7 @@ const steps = [
 export default function OurProcessSection() {
   return (
     <section className="w-full bg-white">
-      <h2 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, sans-serif' }}>
+      <h2 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, serif' }}>
         Our Process
       </h2>
       {steps.map((step, idx) => (
@@ -43,10 +43,10 @@ export default function OurProcessSection() {
         >
           {/* Text */}
           <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 px-8 py-8">
-            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'Raleway, sans-serif' }}>
+            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'Raleway, serif' }}>
               {step.title}
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mb-8 text-center lg:text-left" style={{ fontFamily: 'Helvetica Neue, serif' }}>
+            <p className="text-base md:text-lg text-gray-600 mb-8 text-center lg:text-left" style={{ fontFamily: 'Raleway, serif' }}>
               {step.desc}
             </p>
           </div>
