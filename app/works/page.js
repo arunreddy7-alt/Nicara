@@ -57,10 +57,10 @@ export default function WorksPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-white px-2 sm:px-4 md:px-6 pt-8 sm:pt-10 pb-16 sm:pb-20">
+      <main className="min-h-screen bg-white px-2 sm:px-4 md:px-10 pt-8 pb-16 sm:pb-20">
         <h1
           className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-6 sm:mb-10 text-black"
-          style={{ fontFamily: 'Didot, serif' }}
+          style={{ fontFamily: 'Raleway, serif' }}
         >
           Works
         </h1>

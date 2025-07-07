@@ -47,13 +47,13 @@ export default function ProcessPage() {
   return (
     <>
       <main className="min-h-screen bg-white px-3 sm:px-6 pt-8 sm:pt-10 pb-16 sm:pb-20 flex flex-col items-center">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Didot, serif' }}>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Raleway, serif' }}>
           Process
         </h1>
         <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-16">
           {steps.map((step, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
+              <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Raleway, serif' }}>
                 {step.top}
               </div>
               <div className="w-full aspect-[4/5] relative mb-4 sm:mb-6">
@@ -65,9 +65,9 @@ export default function ProcessPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Didot, serif' }}>{step.title}</div>
+              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Raleway, serif' }}>{step.title}</div>
               {step.bottom && (
-                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
+                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Raleway, serif' }}>
                   {step.bottom}
                 </div>
               )}
@@ -78,7 +78,7 @@ export default function ProcessPage() {
           {steps2.map((step, idx) => (
             <div key={idx} className="flex flex-col items-center">
               {step.top && (
-                <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
+                <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Raleway, serif' }}>
                   {step.top}
                 </div>
               )}
@@ -91,7 +91,7 @@ export default function ProcessPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Didot, serif' }}>{step.title}</div>
+              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Raleway, serif' }}>{step.title}</div>
               {step.bottom && (
                 <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
                   {step.bottom}

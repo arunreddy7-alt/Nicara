@@ -55,7 +55,7 @@ export default function Navbar() {
         <Link href="/works" className="text-xs font-normal hover:underline underline-offset-4 text-black" onClick={handleLinkClick}>WORKS</Link>
         <Link href="/services" className="text-xs font-normal hover:underline underline-offset-4 text-black" onClick={handleLinkClick}>SERVICES</Link>
         <Link href="/process" className="text-xs font-normal hover:underline underline-offset-4 text-black" onClick={handleLinkClick}>PROCESS</Link>
-        <Link href="/about" className="text-xs font-normal hover:underline underline-offset-4 text-black" onClick={handleLinkClick}>ABOUT</Link>
+        <Link href="/about" className="text-xs font-normal hover:underline underline-offset-4 text-black" onClick={handleLinkClick}>OUR STORY</Link>
       </div>
     </nav>
   );

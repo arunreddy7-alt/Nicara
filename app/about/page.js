@@ -1,42 +1,51 @@
 import FooterSection from "../../components/FooterSection";
 import Image from "next/image";
 
+function AboutHeroSection() {
+  return (
+    <section className="relative w-screen h-[45vh] flex items-center justify-center overflow-hidden -mt-13" style={{ background: "#f8f8f8" }}>
+      <img
+        src="/about-hero.jpg" // Replace with your image path
+        alt="About Us Hero"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+          About Us
+        </h1>
+      </div>
+    </section>
+  );
+}
+
 export default function AboutPage() {
   return (
     <>
-      <main className="min-h-screen bg-white px-4 sm:px-6 pt-6 sm:pt-10 pb-16 sm:pb-20 flex flex-col items-center">
-        <h1 className="text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-light leading-none mb-6 sm:mb-8 mt-6 sm:mt-10 text-black" style={{ fontFamily: 'Didot, serif' }}>NICARA</h1>
-        <div className="w-full flex justify-center">
-          <div style={{ padding: '56.25% 0 0 0', position: 'relative', width: '100%', maxWidth: '1100px', marginTop: '-1rem sm:-1.5rem' }}>
-            <iframe
-              src="https://player.vimeo.com/video/1000655134?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-              title="NICARA/Dwelltales"
-              allowFullScreen
-            ></iframe>
+      <main className="min-h-screen bg-white flex flex-col items-center p-0 m-0">
+        <AboutHeroSection />
+        <section className="w-full flex flex-col items-center justify-center py-16 bg-white">
+          <div className="max-w-3xl w-full text-center mx-auto">
+            <h2 className="text-4xl font-light text-gray-700 mb-8" style={{ fontFamily: 'Raleway, serif' }}>
+              About Nicara
+            </h2>
+            <p className="text-base text-black-700 mb-4">We're not just interior designers — we're storytellers of space.
+            At Nicara, we believe your home should feel like you — layered with comfort, beauty, and quiet joy. Our work blends function with feeling, clean lines with softness, and soul with every detail. From homes and retreats to styled celebrations, we design and execute spaces that are lived in, loved, and made to last. We keep things personal, intentional, and effortlessly elegant. That's the Nicara way.</p>
           </div>
-        </div>
-        {/* Our Story Section */}
-        <section className="w-full flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-0 lg:pl-4 lg:pr-8">
-          <div className="w-full lg:w-1/3 mb-8 sm:mb-10 lg:mb-0">
-            <h2 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem] font-light leading-[1.05] text-black text-left" style={{ fontFamily: 'Didot, serif' }}>
-              Our<br />Story
+        </section>
+        <section className="w-full flex flex-col items-center justify-center py-12 bg-white">
+          <div className="w-full px-8">
+            <h2 className="text-4xl font-light text-gray-700 mb-6 text-center" style={{ fontFamily: 'Raleway, serif' }}>
+              The Founders
             </h2>
           </div>
-          <div className="w-full lg:w-2/3 text-black space-y-6 sm:space-y-8 text-base sm:text-lg lg:text-xl -ml-0 lg:-ml-10" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
-            <p className="mb-3 sm:mb-4">The Journey of Nicara</p>
-            <p className="mb-3 sm:mb-4">Nicara was born from a simple yet profound belief&#39;—spaces are more than just structures; they are experiences, emotions, and reflections of those who live and work in them.</p>
-            <p className="mb-3 sm:mb-4">Where It All Began</p>
-            <p className="mb-3 sm:mb-4">We started our journey in Madhapur, Hyderabad, with a passion for interior design and architecture, creating bespoke homes, cafes, and hospitality spaces that blended functionality with beauty. Each project was a canvas, and we loved bringing unique visions to life. But as we worked closely with our clients, we noticed a recurring challenge—they often struggled to find the right property before even thinking about design.</p>
-            <p className="mb-3 sm:mb-4">Expanding into Property Scouting</p>
-            <p className="mb-3 sm:mb-4">We realized that great design starts with the right foundation. A well-located, well-structured property makes all the difference in bringing a vision to life. So, we expanded our services to property scouting, helping our clients find spaces that truly matched their needs—whether a cozy home, a buzzing commercial space, or a serene hospitality retreat.</p>
-            <p className="mb-3 sm:mb-4">The Final Touch &ndash; Furniture & Styling</p>
-            <p className="mb-3 sm:mb-4">Even after the perfect property was found and beautifully designed, something was missing—the soul of the space. That&#39;s when we ventured into furniture and styling, curating handcrafted, sustainable pieces that added warmth, personality, and a touch of Indian artistry.</p>
-            <p className="mb-3 sm:mb-4">Where We Are Today</p>
-            <p className="mb-3 sm:mb-4">Today, Nicara is more than just a design and consulting firm—it&#39;s a storyteller of spaces. With a strong presence in Hyderabad (Madhapur) and Bangalore (Indiranagar), we bring our expertise, creativity, and passion wherever great opportunities arise.</p>
-            <p className="mb-3 sm:mb-4">We don&#39;t just design spaces—we create experiences that last a lifetime. And we&#39;d love to be part of yours.</p>
+          <div className="max-w-3xl w-full mx-auto">
+            <p className="text-lg text-black-700 mb-4 text-center">
+              We've been friends since we were kids — building things, breaking things, and chasing ideas that felt bigger than us.
+              Life took us to different cities — London, Bangalore, Pune, and back to Hyderabad — each one shaping us in its own way.
+              Nishanth followed the path of design, exploring spaces that hold beauty, emotion, and soul.
+              Sriniketh studied at BITS Pilani and found his rhythm in structure — grounding creativity with precision and calm.
+              Nicara is where those paths meet — where friendship becomes vision, and every space is built with intention, detail, and quiet joy.
+            </p>
           </div>
         </section>
         {/* Founders Section */}
@@ -59,8 +68,8 @@ export default function AboutPage() {
           </div>
         </section>
         {/* Contact/Inquiry Form Section */}
-        <section className="w-full flex flex-col lg:flex-row items-start justify-between max-w-8xl mx-auto mt-20 sm:mt-24 lg:mt-30 px-4 sm:px-6 lg:px-2 xl:px-8">
-          <div className="w-full lg:w-1/2 mb-8 sm:mb-10 lg:mb-0">
+        <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-4 sm:mt-8 px-2 sm:px-8 mb-24">
+        <div className="w-full md:w-1/2 mb-10 md:mb-0">
             <h2 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem] font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
               Reach out to<br />inquire about<br />our services
             </h2>

@@ -23,7 +23,7 @@ export default function ServicePage() {
   return (
     <>
       <main className="min-h-screen bg-white px-3 sm:px-6 pt-8 sm:pt-10 pb-16 sm:pb-20 flex flex-col items-center">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Didot, serif' }}>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Raleway, serif' }}>
           Services
         </h1>
         <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7">
@@ -38,10 +38,10 @@ export default function ServicePage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-2xl sm:text-4xl font-light text-black text-left w-full" style={{ fontFamily: 'Didot, serif' }}>
+              <div className="text-2xl sm:text-4xl font-light text-black text-left w-full" style={{ fontFamily: 'Raleway, serif' }}>
                 {service.title}
               </div>
-              <p className="text-base sm:text-xl font-normal text-black text-left w-full mt-6 sm:mt-9" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
+              <p className="text-base sm:text-xl font-normal text-black text-left w-full mt-6 sm:mt-9" style={{ fontFamily: 'Raleway,serif' }}>
                 {service.description}
               </p>
             </div>

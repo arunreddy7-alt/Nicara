@@ -7,7 +7,7 @@ export default function FooterSection() {
       <div className="w-full flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4 sm:px-8 pb-10 flex-1 gap-10 md:gap-0">
         {/* Contact Us - Left */}
         <div className="md:w-1/3 flex flex-col items-start justify-end mb-8 md:mb-0 ml-0 md:ml-0" style={{ minHeight: 120 }}>
-          <h3 className="text-2xl sm:text-3xl font-light mb-6" style={{ fontFamily: 'Didot, serif' }}>Contact Us</h3>
+          <h3 className="text-2xl sm:text-3xl font-light mb-6" style={{ fontFamily: 'Raleway, serif' }}>Contact Us</h3>
           <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Email</span> : hello@dwelltales.com</p>
           <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Phone</span> : +91 89777 56062 / +91 85599 01234</p>
           <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Address</span> :<br />Madhapur, Hyderabad, Indiranagar, Bangalore</p>
@@ -20,12 +20,12 @@ export default function FooterSection() {
         {/* Quick Links - Right */}
         <div className="w-full md:w-1/3 flex flex-col items-end justify-end" style={{ minHeight: 120 }}>
           <div className="flex flex-col w-full max-w-xs md:max-w-sm">
-            <h3 className="text-2xl sm:text-3xl font-light mb-6 text-left md:text-right" style={{ fontFamily: 'Didot, serif' }}>Quick Links</h3>
+            <h3 className="text-2xl sm:text-3xl font-light mb-6 text-left md:text-right" style={{ fontFamily: 'Raleway, serif' }}>Quick Links</h3>
             <ul className="list-disc list-inside ml-0 md:ml-[228px] space-y-4 text-lg">
               <li><Link href="/works" className="underline">Works</Link></li>
               <li><Link href="/services" className="underline">Services</Link></li>
               <li><Link href="/process" className="underline">Process</Link></li>
-              <li><Link href="/about" className="underline">About</Link></li>
+              <li><Link href="/about" className="underline">Our story</Link></li>
             </ul>
           </div>
         </div>
