@@ -50,7 +50,7 @@ export default function AutoImageSlider() {
       <div className={posClass}>
         <span
           className={`text-black text-5xl md:text-6xl font-light text-center select-none transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${textMarginTop}`}
-          style={{ fontFamily: 'Raleway, sans-serif' }}
+          style={{ fontFamily: 'Raleway, serif' }}
         >
           {images[current].name.charAt(0).toUpperCase() + images[current].name.slice(1)}
         </span>
