@@ -13,7 +13,7 @@ export default function HandcraftedVideoSection() {
         <h2 className="text-3xl md:text-6xl font-light text-black mb-4" style={{ fontFamily: 'Raleway, serif' }}>
           Handcrafted with Love
         </h2>
-        <p className="text-lg md:text-2xl text-black mb-6" style={{ fontFamily: 'Helvetica Neue, serif' }}>
+        <p className="text-lg md:text-2xl text-black mb-6" style={{ fontFamily: 'Raleway, serif' }}>
           Know more about our craft
         </p>
         <a
