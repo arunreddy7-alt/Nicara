@@ -33,7 +33,7 @@ export default function WhatWeDoSection() {
           <div key={idx} className="p-6 flex flex-col items-center text-center h-full">
             <Image src={item.img} alt={item.title} width={700} height={700} priority className="w-full h-[44rem] object-contain mb-4" />
             <h3 className="text-xl sm:text-2xl font-semibold mb-2" style={{ fontFamily: 'Raleway, sans-serif' }}>{item.title}</h3>
-            <p className="text-base sm:text-lg text-gray-700" style={{ fontFamily: 'Helvetica Neue, serif' }}>{item.desc}</p>
+            <p className="text-base sm:text-lg text-gray-700" style={{ fontFamily: 'Raleway, serif' }}>{item.desc}</p>
           </div>
         ))}
       </div>
