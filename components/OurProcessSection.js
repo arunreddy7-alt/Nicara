@@ -31,9 +31,9 @@ const steps = [
 export default function OurProcessSection() {
   return (
     <section className="w-full bg-white">
-      <h2 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, serif' }}>
+      <h1 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, serif' }}>
         Our Process
-      </h2>
+      </h1>
       {steps.map((step, idx) => (
         <div
           key={idx}
