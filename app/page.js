@@ -8,14 +8,14 @@ import AutoImageSlider from "../components/AutoImageSlider";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col items-center min-h-screen bg-white text-black pt-0">
+    <main className="w-full flex flex-col items-center min-h-screen bg-white text-black">
       <AutoImageSlider />
       <WhyUsSection />
       <WhatWeDoSection />
       <HandcraftedVideoSection />
       <OurProcessSection />
       <TestimonialsSection />
-      <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-4 sm:mt-8 px-2 sm:px-8 mb-16">
+      <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-16 sm:mt-20 px-2 sm:px-8">
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
           <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
             Reach out to<br />inquire about<br />our services

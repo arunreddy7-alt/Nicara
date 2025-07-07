@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const images = [
   { src: "/homes.jpg", name: "Homes", position: "center" },
@@ -40,13 +39,12 @@ export default function AutoImageSlider() {
   const textMarginTop = ["center", "top"].includes(images[current].position) ? "mt-[100px]" : "";
 
   return (
-    <div className="w-full h-[calc(100vh-100px)] overflow-hidden">
-      <Image
+    <div className="w-screen h-[calc(100vh-100px)] overflow-hidden -mt-13">
+      <img
         src={images[current].src}
         alt={images[current].name}
-        fill
-        priority
         className="object-cover w-full h-full"
+        style={{ transition: 'opacity 0.5s' }}
       />
       {/* Name text at variable position with fade animation and navbar padding */}
       <div className={posClass}>

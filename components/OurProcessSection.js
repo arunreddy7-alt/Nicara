@@ -31,7 +31,7 @@ const steps = [
 export default function OurProcessSection() {
   return (
     <section className="w-full bg-white">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, sans-serif' }}>
+      <h2 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, sans-serif' }}>
         Our Process
       </h2>
       {steps.map((step, idx) => (
@@ -55,8 +55,8 @@ export default function OurProcessSection() {
             <Image
               src={step.img}
               alt={step.title}
-              fill
-              priority
+              width={700}
+              height={448}
               className="w-full h-[28rem] object-cover rounded"
             />
           </div>

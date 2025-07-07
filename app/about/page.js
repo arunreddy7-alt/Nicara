@@ -4,18 +4,15 @@ import Image from "next/image";
 function AboutHeroSection() {
   return (
     <section className="relative w-screen h-[45vh] flex items-center justify-center overflow-hidden -mt-13" style={{ background: "#f8f8f8" }}>
-      <Image
+      <img
         src="/about-hero.jpg" // Replace with your image path
         alt="About Us Hero"
-        fill
-        priority
-        className="object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Didot, serif' }}>
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Raleway, serif' }}>
           About Us
         </h1>
-        <div className="w-24 h-1 bg-white mx-auto mt-2 rounded-full opacity-80" />
       </div>
     </section>
   );
@@ -31,8 +28,8 @@ export default function AboutPage() {
             <h2 className="text-4xl font-light text-gray-700 mb-8" style={{ fontFamily: 'Raleway, serif' }}>
               About Nicara
             </h2>
-            <p className="text-base text-black-700 mb-4">We&apos;re not just interior designers — we&apos;re storytellers of space.
-            At Nicara, we believe your home should feel like you — layered with comfort, beauty, and quiet joy. Our work blends function with feeling, clean lines with softness, and soul with every detail. From homes and retreats to styled celebrations, we design and execute spaces that are lived in, loved, and made to last. We keep things personal, intentional, and effortlessly elegant. That&apos;s the Nicara way.</p>
+            <p className="text-base text-black-700 mb-4">We're not just interior designers — we're storytellers of space.
+            At Nicara, we believe your home should feel like you — layered with comfort, beauty, and quiet joy. Our work blends function with feeling, clean lines with softness, and soul with every detail. From homes and retreats to styled celebrations, we design and execute spaces that are lived in, loved, and made to last. We keep things personal, intentional, and effortlessly elegant. That's the Nicara way.</p>
           </div>
         </section>
         <section className="w-full flex flex-col items-center justify-center py-12 bg-white">
@@ -43,7 +40,7 @@ export default function AboutPage() {
           </div>
           <div className="max-w-3xl w-full mx-auto">
             <p className="text-lg text-black-700 mb-4 text-center">
-              We&apos;ve been friends since we were kids — building things, breaking things, and chasing ideas that felt bigger than us.
+              We've been friends since we were kids — building things, breaking things, and chasing ideas that felt bigger than us.
               Life took us to different cities — London, Bangalore, Pune, and back to Hyderabad — each one shaping us in its own way.
               Nishanth followed the path of design, exploring spaces that hold beauty, emotion, and soul.
               Sriniketh studied at BITS Pilani and found his rhythm in structure — grounding creativity with precision and calm.
