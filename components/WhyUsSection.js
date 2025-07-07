@@ -9,7 +9,7 @@ export default function WhyUsSection() {
   </h2>
   <p
     className="max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-6xl text-center text-base sm:text-lg md:text-xl font-normal text-black"
-    style={{ fontFamily: 'Helvetica Neue, serif' }}>
+    style={{ fontFamily: 'Raleway, serif' }}>
     we create spaces that hold meaning. Thoughtful design, quiet joy,    
     <br className="hidden sm:block" />
     and lasting beauty — all shaped around you. From soulful homes to retreats
