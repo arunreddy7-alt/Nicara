@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const steps = [
   {
     title: "Listen",
@@ -50,9 +52,11 @@ export default function OurProcessSection() {
           </div>
           {/* Image */}
           <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
-            <img
+            <Image
               src={step.img}
               alt={step.title}
+              fill
+              priority
               className="w-full h-[28rem] object-cover rounded"
             />
           </div>

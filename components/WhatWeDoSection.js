@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhatWeDoSection() {
   const items = [
     {
@@ -29,7 +31,7 @@ export default function WhatWeDoSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-7xl mx-auto">
         {items.map((item, idx) => (
           <div key={idx} className="p-6 flex flex-col items-center text-center h-full">
-            <img src={item.img} alt={item.title} className="w-full h-[44rem] object-contain mb-4" />
+            <Image src={item.img} alt={item.title} fill priority className="w-full h-[44rem] object-contain mb-4" />
             <h3 className="text-xl sm:text-2xl font-semibold mb-2" style={{ fontFamily: 'Raleway, sans-serif' }}>{item.title}</h3>
             <p className="text-base sm:text-lg text-gray-700" style={{ fontFamily: 'Helvetica Neue, serif' }}>{item.desc}</p>
           </div>
