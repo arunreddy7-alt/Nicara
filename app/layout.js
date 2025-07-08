@@ -22,9 +22,10 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}
       >
         <Navbar />
-        <main className="w-full flex flex-col items-center min-h-screen bg-white text-black pt-32 sm:pt-40">
+        <main className="w-full flex flex-col items-center min-h-screen bg-white text-black">
           {children}
         </main>
       </body>

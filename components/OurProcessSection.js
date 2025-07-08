@@ -30,34 +30,31 @@ const steps = [
 
 export default function OurProcessSection() {
   return (
-    <section className="w-full bg-white">
-      <h1 className="text-4xl sm:text-xl md:text-4xl font-light mb-10 text-left w-full px-8 pt-25" style={{ fontFamily: 'Raleway, serif' }}>
-        Our Process
-      </h1>
+    <section className="w-full bg-white -mt-18 pt-0">
       {steps.map((step, idx) => (
         <div
           key={idx}
           className={`flex flex-col lg:flex-row items-stretch justify-center ${
             idx % 2 === 1 ? 'lg:flex-row-reverse' : ''
-          } py-12`}
+          } mt-0 pt-0`}
         >
           {/* Text */}
           <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 px-8 py-8">
-            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+            <h2 className="text-2xl md:text-4xl font-light mb-4" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
               {step.title}
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mb-8 text-center lg:text-left" style={{ fontFamily: 'Raleway, serif' }}>
+            <p className="text-base md:text-lg text-gray-600 mb-8 text-center lg:text-left" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
               {step.desc}
             </p>
           </div>
           {/* Image */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center p-8">
+          <div className="w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0">
             <Image
               src={step.img}
               alt={step.title}
               width={700}
               height={448}
-              className="w-full h-[28rem] object-cover rounded"
+              className="w-full h-[28rem] object-cover"
             />
           </div>
         </div>

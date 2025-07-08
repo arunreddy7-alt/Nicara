@@ -17,7 +17,7 @@ export default function Home() {
       <TestimonialsSection />
       <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-16 sm:mt-20 px-2 sm:px-8">
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
-          <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
+          <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
             Reach out to<br />inquire about<br />our services
           </h2>
         </div>

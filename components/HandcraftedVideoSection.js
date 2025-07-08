@@ -10,10 +10,10 @@ export default function HandcraftedVideoSection() {
         playsInline
       />
       <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-center">
-        <h2 className="text-3xl md:text-6xl font-light text-black mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+        <h2 className="text-3xl md:text-6xl font-light text-black mb-4" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
           Handcrafted with Love
         </h2>
-        <p className="text-lg md:text-2xl text-black mb-6" style={{ fontFamily: 'Raleway, serif' }}>
+        <p className="text-lg md:text-2xl text-black mb-6" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
           Know more about our craft
         </p>
         <a

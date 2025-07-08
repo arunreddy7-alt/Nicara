@@ -21,16 +21,16 @@ function AboutHeroSection() {
 export default function AboutPage() {
   return (
     <>
-      <main className="min-h-screen bg-white flex flex-col items-center p-0 m-0">
+      <main className="min-h-screen bg-white px-2 sm:px-4 md:px-10 pt-32 sm:pt-40 pb-16 sm:pb-20">
         <AboutHeroSection />
         <section className="w-full flex flex-col items-center justify-center py-16 bg-white">
           <div className="max-w-3xl w-full text-center mx-auto">
-            <h2 className="text-4xl font-light text-gray-700 mb-8" style={{ fontFamily: 'Raleway, serif' }}>
-              About Nicara
-            </h2>
-            <p className="text-base text-black-700 mb-4">We're not just interior designers — we're storytellers of space.
-            At Nicara, we believe your home should feel like you — layered with comfort, beauty, and quiet joy. Our work blends function with feeling, clean lines with softness, and soul with every detail. From homes and retreats to styled celebrations, we design and execute spaces that are lived in, loved, and made to last. We keep things personal, intentional, and effortlessly elegant. That's the Nicara way.</p>
-          </div>
+            <p className="text-base text-black-700 mb-4">At Nicara, we don’t just design spaces — we style your story.
+We believe your home should feel like you warm, personal, and full of quiet joy. Our design blends clean lines with soft details, and every element is chosen with care and meaning.
+From homes and retreats to intimate celebrations, we create spaces that are lived in, loved, and made to last. Nothing loud or overdone — just thoughtful, timeless, and effortlessly elegant.
+Because in the end, it’s not just about how it looks — it’s about how it makes you feel.
+That’s the Nicara way. </p>
+ </div>
         </section>
         <section className="w-full flex flex-col items-center justify-center py-12 bg-white">
           <div className="w-full px-8">

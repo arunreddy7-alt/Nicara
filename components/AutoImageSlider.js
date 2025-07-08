@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  { src: "/homes.jpg", name: "Homes", position: "center" },
-  { src: "/retreats.jpg", name: "Retreats", position: "bottom" },
-  { src: "/celebrations-events.jpg", name: "Celebrations & Events", position: "center" },
-  { src: "/furniture-decor.jpg", name: "Furniture & Decor", position: "bottom" }
+  { src: "/homes.jpg", name: "Homes With Heart", position: "center" },
+  { src: "/retreats.jpg", name: "Pieces That Belong", position: "bottom" },
+  { src: "/celebrations-events.jpg", name: "Tiny Tales", position: "center" },
+  { src: "/furniture-decor.jpg", name: "Styled Retreats", position: "bottom" }
 ];
 
 const positionClasses = {
@@ -39,18 +39,20 @@ export default function AutoImageSlider() {
   const textMarginTop = ["center", "top"].includes(images[current].position) ? "mt-[100px]" : "";
 
   return (
-    <div className="w-screen h-[calc(100vh-100px)] overflow-hidden -mt-13">
+    <div className="w-screen h-screen overflow-hidden relative">
       <img
         src={images[current].src}
         alt={images[current].name}
         className="object-cover w-full h-full"
         style={{ transition: 'opacity 0.5s' }}
       />
+      {/* Optional overlay for readability */}
+      {/* <div className="absolute inset-0 bg-white/20" /> */}
       {/* Name text at variable position with fade animation and navbar padding */}
       <div className={posClass}>
         <span
           className={`text-black text-5xl md:text-6xl font-light text-center select-none transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${textMarginTop}`}
-          style={{ fontFamily: 'Raleway, serif' }}
+          style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}
         >
           {images[current].name.charAt(0).toUpperCase() + images[current].name.slice(1)}
         </span>

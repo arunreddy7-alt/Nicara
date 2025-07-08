@@ -22,9 +22,9 @@ const services = [
 export default function ServicePage() {
   return (
     <>
-      <main className="min-h-screen bg-white px-3 sm:px-6 pt-8 sm:pt-10 pb-16 sm:pb-20 flex flex-col items-center">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Raleway, serif' }}>
-          Services
+      <main className="min-h-screen bg-white px-2 sm:px-4 md:px-10 pt-32 sm:pt-40 pb-16 sm:pb-20">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
+          What We Do
         </h1>
         <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7">
           {services.map((service, idx) => (
@@ -38,10 +38,10 @@ export default function ServicePage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-2xl sm:text-4xl font-light text-black text-left w-full" style={{ fontFamily: 'Raleway, serif' }}>
+              <div className="text-2xl sm:text-4xl font-light text-black text-left w-full" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
                 {service.title}
               </div>
-              <p className="text-base sm:text-xl font-normal text-black text-left w-full mt-6 sm:mt-9" style={{ fontFamily: 'Raleway,serif' }}>
+              <p className="text-base sm:text-xl font-normal text-black text-left w-full mt-6 sm:mt-9" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
                 {service.description}
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function ServicePage() {
         </div>
         <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-20 sm:mt-30 px-2 sm:px-8">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <h1 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
+            <h1 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
               Reach out to<br />inquire about<br />our services
             </h1>
           </div>
