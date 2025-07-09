@@ -29,9 +29,9 @@ export default function WhatWeDoSection() {
       <h2 className="text-4xl sm:text-5xl md:text-6xl font-light mb-10 text-left w-full" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
         What We Do
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 w-full max-w-7xl mx-auto">
         {items.map((item, idx) => (
-          <div key={idx} className="p-6 flex flex-col items-center text-center h-full w-full">
+          <div key={idx} className="p-2 flex flex-col items-center text-center h-full w-full max-w-[700px] mx-auto">
             <Link href="/services" className="w-full block">
               <Image src={item.img} alt={item.title} width={1200} height={900} priority className="w-full h-[55rem] object-cover mb-4 shadow-md" style={{ borderRadius: 0 }} />
             </Link>
