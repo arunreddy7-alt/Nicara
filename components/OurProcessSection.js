@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const steps = [
   {
+    title1:"our process",
     title: "Listen",
     desc: "We begin with a conversation - understanding your lifestyle, values, and how you want to feel in your space.",
     img: "/process-1.jpg"
@@ -30,13 +31,19 @@ const steps = [
 
 export default function OurProcessSection() {
   return (
-    <section className="w-full bg-white -mt-18 pt-0">
+    <section className="w-full bg-white -mt-15 pt-0">
+      <h1
+        className="text-5xl md:text-6xl font-light text-left text-black mb--5 mt-32 ml-4"
+        style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}
+      >
+        Our process
+      </h1>
       {steps.map((step, idx) => (
         <div
           key={idx}
           className={`flex flex-col lg:flex-row items-stretch justify-center ${
             idx % 2 === 1 ? 'lg:flex-row-reverse' : ''
-          } mt-0 pt-0`}
+          } ${idx === 0 ? 'mt-0' : 'mt-0'}`}
         >
           {/* Text */}
           <div className="flex flex-col justify-center items-center lg:items-start w-full lg:w-1/2 px-8 py-8">
@@ -48,13 +55,13 @@ export default function OurProcessSection() {
             </p>
           </div>
           {/* Image */}
-          <div className="w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0">
+          <div className={`w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0 ${idx === 0 ? '-mt-32' : ''}`}>
             <Image
               src={step.img}
               alt={step.title}
               width={700}
               height={448}
-              className="w-full h-[28rem] object-cover"
+              className={`w-full ${idx === 0 ? 'h-[50rem]' : 'h-[50rem]'} object-cover`}
             />
           </div>
         </div>

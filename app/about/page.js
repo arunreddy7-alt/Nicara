@@ -1,5 +1,7 @@
+"use client";
 import FooterSection from "../../components/FooterSection";
 import Image from "next/image";
+import { useRef, useState } from "react";
 
 function AboutHeroSection() {
   return (
@@ -10,7 +12,7 @@ function AboutHeroSection() {
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+        <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
           About Us
         </h1>
       </div>
@@ -32,9 +34,12 @@ Because in the end, it’s not just about how it looks — it’s about how it m
 That’s the Nicara way. </p>
  </div>
         </section>
+        <section className="w-full flex flex-col items-center justify-center py-8 bg-white">
+          <AboutVideoPlayer />
+        </section>
         <section className="w-full flex flex-col items-center justify-center py-12 bg-white">
           <div className="w-full px-8">
-            <h2 className="text-4xl font-light text-gray-700 mb-6 text-center" style={{ fontFamily: 'Raleway, serif' }}>
+            <h2 className="text-4xl font-light text-gray-700 mb-6 text-center" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
               The Founders
             </h2>
           </div>
@@ -54,7 +59,7 @@ That’s the Nicara way. </p>
             <div className="w-full flex justify-center">
               <Image src="/nishanth.jpg" alt="Nishanth P." width={420} height={420} className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
             </div>
-            <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Didot, serif' }}>
+            <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif'} }>
               Nishanth P.
             </div>
           </div>
@@ -62,7 +67,7 @@ That’s the Nicara way. </p>
             <div className="w-full flex justify-center">
               <Image src="/sriniketh.png" alt="Sriniketh P." width={420} height={420} className="object-cover w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px]" />
             </div>
-            <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Didot, serif' }}>
+            <div className="text-xl sm:text-2xl lg:text-3xl font-light mt-4 sm:mt-6 text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif'} }>
               Sriniketh P.
             </div>
           </div>
@@ -70,7 +75,7 @@ That’s the Nicara way. </p>
         {/* Contact/Inquiry Form Section */}
         <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-4 sm:mt-8 px-2 sm:px-8 mb-24">
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <h2 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem] font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
+            <h2 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] xl:text-[6rem] font-light leading-[1.05] text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif'} }>
               Reach out to<br />inquire about<br />our services
             </h2>
           </div>
@@ -131,5 +136,53 @@ That’s the Nicara way. </p>
       </main>
       <FooterSection />
     </>
+  );
+}
+
+function AboutVideoPlayer() {
+  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+
+  const handlePlayPause = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play();
+      setPlaying(true);
+    } else {
+      video.pause();
+      setPlaying(false);
+    }
+  };
+
+  const handleVideoEnded = () => setPlaying(false);
+
+  return (
+    <div className="relative w-full">
+      <video
+        ref={videoRef}
+        className="w-full rounded-lg shadow-lg"
+        poster="/video-poster.png"
+        onEnded={handleVideoEnded}
+        onClick={handlePlayPause}
+      >
+        <source src="/output.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {!playing && (
+        <button
+          type="button"
+          onClick={handlePlayPause}
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-60 rounded-full p-6 focus:outline-none"
+          aria-label={playing ? 'Pause video' : 'Play video'}
+          style={{ zIndex: 2 }}
+        >
+          {/* Play icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <polygon points="8,5 19,12 8,19" />
+          </svg>
+        </button>
+      )}
+    </div>
   );
 } 

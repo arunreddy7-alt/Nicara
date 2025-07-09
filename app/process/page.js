@@ -47,13 +47,13 @@ export default function ProcessPage() {
   return (
     <>
       <main className="min-h-screen bg-white px-2 sm:px-4 md:px-10 pt-32 sm:pt-40 pb-16 sm:pb-20">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Raleway, serif' }}>
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-light leading-none mb-10 text-black w-full text-left" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
           Process
         </h1>
         <div className="w-full max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-16">
           {steps.map((step, idx) => (
             <div key={idx} className="flex flex-col items-center">
-              <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+              <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
                 {step.top}
               </div>
               <div className="w-full aspect-[4/5] relative mb-4 sm:mb-6">
@@ -65,9 +65,9 @@ export default function ProcessPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Raleway, serif' }}>{step.title}</div>
+              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>{step.title}</div>
               {step.bottom && (
-                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Raleway, serif' }}>
+                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
                   {step.bottom}
                 </div>
               )}
@@ -78,7 +78,7 @@ export default function ProcessPage() {
           {steps2.map((step, idx) => (
             <div key={idx} className="flex flex-col items-center">
               {step.top && (
-                <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{ fontFamily: 'Raleway, serif' }}>
+                <div className="w-full text-base sm:text-xl font-normal text-black text-center mb-2 sm:mb-4" style={{fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
                   {step.top}
                 </div>
               )}
@@ -91,9 +91,9 @@ export default function ProcessPage() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </div>
-              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Raleway, serif' }}>{step.title}</div>
+              <div className="text-xl sm:text-3xl md:text-4xl font-light text-black text-center mb-4 sm:mb-7" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>{step.title}</div>
               {step.bottom && (
-                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Helvetica Neue, Arial, sans-serif' }}>
+                <div className="text-base sm:text-xl font-normal text-black text-center mt-1 sm:mt-2 w-full" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif'}}>
                   {step.bottom}
                 </div>
               )}
@@ -102,7 +102,7 @@ export default function ProcessPage() {
         </div>
         <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-16 sm:mt-20 px-2 sm:px-8">
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
-            <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Didot, serif' }}>
+            <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
               Reach out to<br />inquire about<br />our services
             </h2>
           </div>
