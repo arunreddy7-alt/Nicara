@@ -20,20 +20,22 @@ export default function AutoImageSlider() {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    setFade(false);
-    const timeout = setTimeout(() => setFade(true), 100);
-    const interval = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % images.length);
-        setFade(true);
-      }, 300);
-    }, 2500);
+    let interval;
+    let timeout;
+    function startSlider() {
+      timeout = setTimeout(() => {
+        setFade(false);
+        setTimeout(() => {
+          setCurrent((prev) => (prev + 1) % images.length);
+          setFade(true);
+        }, 300); // fade out duration
+      }, 2500);
+    }
+    startSlider();
     return () => {
-      clearInterval(interval);
       clearTimeout(timeout);
     };
-  }, []);
+  }, [current]);
 
   const posClass = positionClasses[images[current].position] || positionClasses.center;
   const textMarginTop = ["center", "top"].includes(images[current].position) ? "mt-[100px]" : "";
