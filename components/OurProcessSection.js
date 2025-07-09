@@ -55,7 +55,7 @@ export default function OurProcessSection() {
             </p>
           </div>
           {/* Image */}
-          <div className={`w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0 ${idx === 0 ? '-mt-32' : ''}`}>
+          <div className={`w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0 ${idx === 0 ? '-mt-32' : ''} relative`}>
             <Image
               src={step.img}
               alt={step.title}
@@ -63,6 +63,15 @@ export default function OurProcessSection() {
               height={448}
               className={`w-full ${idx === 0 ? 'h-[50rem]' : 'h-[50rem]'} object-cover`}
             />
+            {idx === 0 && (
+              <a
+                href="/process"
+                className="absolute top-20 right-20 text-black text-base sm:text-lg font-medium px-4 py-2"
+                style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif', zIndex: 10 }}
+              >
+                View All
+              </a>
+            )}
           </div>
         </div>
       ))}

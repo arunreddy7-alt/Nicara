@@ -5,6 +5,7 @@ import OurProcessSection from "../components/OurProcessSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FooterSection from "../components/FooterSection";
 import AutoImageSlider from "../components/AutoImageSlider";
+import WallpapersSection from "../components/WallpapersSection";
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
       <WhatWeDoSection />
       <HandcraftedVideoSection />
       <OurProcessSection />
+      <WallpapersSection />
       <TestimonialsSection />
-      <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-16 sm:mt-20 px-2 sm:px-8">
+      <section className="w-full flex flex-col md:flex-row items-start justify-between max-w-8xl mx-auto mt-4 sm:mt-8 px-2 sm:px-8 mb-24">
         <div className="w-full md:w-1/2 mb-10 md:mb-0">
           <h2 className="text-4xl sm:text-7xl md:text-8xl font-light leading-[1.05] text-black" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
             Reach out to<br />inquire about<br />our services

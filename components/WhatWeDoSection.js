@@ -26,9 +26,18 @@ export default function WhatWeDoSection() {
   ];
   return (
     <section className="w-full bg-white py-12 flex flex-col items-center px-2 sm:px-4">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-light mb-10 text-left w-full" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
-        What We Do
-      </h2>
+      <div className="w-full flex items-center justify-between mb-10">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-left" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
+          What We Do
+        </h2>
+        <a
+          href="/services"
+          className="text-base sm:text-lg font-medium text-black hover:text-gray-700 transition mr-18 mt-6"
+          style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}
+        >
+          View All
+        </a>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1 w-full max-w-7xl mx-auto">
         {items.map((item, idx) => (
           <div key={idx} className="p-2 flex flex-col items-center text-center h-full w-full max-w-[700px] mx-auto">

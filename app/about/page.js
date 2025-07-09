@@ -13,7 +13,7 @@ function AboutHeroSection() {
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 className="text-5xl md:text-7xl font-light text-white mb-4" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>
-          About Us
+          Our Story
         </h1>
       </div>
     </section>
