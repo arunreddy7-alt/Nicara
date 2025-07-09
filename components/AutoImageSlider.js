@@ -54,7 +54,20 @@ export default function AutoImageSlider() {
       <div className={posClass}>
         <span
           className={`text-black text-5xl md:text-6xl font-light text-center select-none transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${textMarginTop}`}
-          style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}
+          style={{
+            fontFamily: 'Montserrat, Inter, Geist, sans-serif',
+            marginTop:
+              current === 0 ? '-2rem'
+              : current === 1 ? '-22rem'
+              : current === 2 ? '-13rem'
+              : current === 3 ? '-21rem'
+              : undefined,
+            marginLeft:
+              current === 1 ? '39rem'
+              : current === 2 ? '17rem'
+              : current === 3 ? '33rem'
+              : undefined
+          }}
         >
           {images[current].name.charAt(0).toUpperCase() + images[current].name.slice(1)}
         </span>
