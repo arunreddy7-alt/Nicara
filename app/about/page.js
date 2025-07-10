@@ -158,10 +158,10 @@ function AboutVideoPlayer() {
   const handleVideoEnded = () => setPlaying(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full max-w-7xl mx-auto">
       <video
         ref={videoRef}
-        className="w-full rounded-lg shadow-lg"
+        className="w-full shadow-lg"
         poster="/video-poster.png"
         onEnded={handleVideoEnded}
         onClick={handlePlayPause}

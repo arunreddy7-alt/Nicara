@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const steps = [
   {
@@ -56,13 +57,15 @@ export default function OurProcessSection() {
           </div>
           {/* Image */}
           <div className={`w-full lg:w-1/2 flex items-center justify-end p-0 pr-0 pl-0 ${idx === 0 ? '-mt-32' : ''} relative`}>
-            <Image
-              src={step.img}
-              alt={step.title}
-              width={700}
-              height={448}
-              className={`w-full ${idx === 0 ? 'h-[50rem]' : 'h-[50rem]'} object-cover`}
-            />
+            <Link href="/process" className="w-full block">
+              <Image
+                src={step.img}
+                alt={step.title}
+                width={700}
+                height={448}
+                className={`w-full ${idx === 0 ? 'h-[50rem]' : 'h-[50rem]'} object-cover`}
+              />
+            </Link>
             {idx === 0 && (
               <a
                 href="/process"
