@@ -9,7 +9,7 @@ export default function FooterSection() {
         <div className="md:w-1/3 flex flex-col items-start justify-end mb-8 md:mb-0 ml-0 md:ml-0" style={{ minHeight: 120 }}>
           <h3 className="text-2xl sm:text-3xl font-light mb-6" style={{ fontFamily: 'Montserrat, Inter, Geist, sans-serif' }}>Contact Us</h3>
           <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Email</span> : hello@dwelltales.com</p>
-          <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Phone</span> : +91 89777 56062 / +91 85599 01234</p>
+          <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Phone</span> : +91 89777 56062</p>
           <p className="mb-3 text-lg sm:text-xl text-left md:text-left"><span className="font-bold">Address</span> :<br />1. Madhapur, Hyderabad<br />2. Indiranagar, Bangalore</p>
           <p className="text-lg sm:text-xl text-left md:text-left"></p>
         </div>

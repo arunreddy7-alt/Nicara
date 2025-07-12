@@ -75,9 +75,10 @@ export default function ServicePage() {
             <div>
               <label className="block text-sm mb-1 text-black">What services are you interested in?</label>
               <div className="flex flex-col gap-2 pl-1">
-                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Property Scouting</label>
-                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Interiors & Architecture</label>
-                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Furniture & Styling</label>
+              <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Interior Design</label>
+                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Project Management</label>
+                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Decor & Styling</label>
+                <label className="inline-flex items-center text-black"><input type="checkbox" className="mr-2" />Furniture Design</label>
               </div>
             </div>
             <div>
