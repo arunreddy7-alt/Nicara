@@ -17,15 +17,10 @@ const positionClasses = {
 
 export default function AutoImageSlider() {
   const [current, setCurrent] = useState(0);
-  const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrent((prev) => (prev + 1) % images.length);
-        setFade(true);
-      }, 300); // fade out duration
+      setCurrent((prev) => (prev + 1) % images.length);
     }, 2500);
     return () => clearInterval(interval);
   }, []);
@@ -39,14 +34,13 @@ export default function AutoImageSlider() {
         src={images[current].src}
         alt={images[current].name}
         className="object-cover w-full h-full"
-        style={{ transition: 'opacity 0.5s' }}
       />
       {/* Optional overlay for readability */}
       {/* <div className="absolute inset-0 bg-white/20" /> */}
       {/* Name text at variable position with fade animation and navbar padding */}
       <div className={posClass}>
         <span
-          className={`text-black text-5xl md:text-6xl font-light text-center select-none transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'} ${textMarginTop}`}
+          className="text-black text-5xl md:text-6xl font-light text-center select-none"
           style={{
             fontFamily: 'Montserrat, Inter, Geist, sans-serif',
             marginTop:
