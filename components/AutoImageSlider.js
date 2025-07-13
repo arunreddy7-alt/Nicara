@@ -20,10 +20,18 @@ export default function AutoImageSlider() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+      setCurrent((prev) => {
+        const next = (prev + 1) % images.length;
+        console.log('Slider interval: changing from', prev, 'to', next, 'image:', images[next].src);
+        return next;
+      });
     }, 2500);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    console.log('Current image index:', current, 'Image src:', images[current].src);
+  }, [current]);
 
   const posClass = positionClasses[images[current].position] || positionClasses.center;
   const textMarginTop = ["center", "top"].includes(images[current].position) ? "mt-[100px]" : "";
@@ -34,6 +42,8 @@ export default function AutoImageSlider() {
         src={images[current].src}
         alt={images[current].name}
         className="object-cover w-full h-full"
+        onError={() => console.error('Image failed to load:', images[current].src)}
+        onLoad={() => console.log('Image loaded:', images[current].src)}
       />
       {/* Optional overlay for readability */}
       {/* <div className="absolute inset-0 bg-white/20" /> */}
