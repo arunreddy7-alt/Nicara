@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 
 function AboutHeroSection() {
   return (
-    <section className="relative w-screen h-[45vh] flex items-center justify-center overflow-hidden -mt-13" style={{ background: "#f8f8f8" }}>
+    <section className="relative w-screen h-[45vh] flex items-center justify-center overflow-hidden" style={{ background: "#f8f8f8" }}>
       <img
         src="/about-hero.jpg" // Replace with your image path
         alt="About Us Hero"

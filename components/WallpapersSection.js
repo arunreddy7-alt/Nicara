@@ -3,27 +3,27 @@ import Link from "next/link";
 
 const wallpapers = [
   {
-    img: "/wallpaper1.jpg",
+    img: "/wallpaper1.png",
     title: ""
   },
   {
-    img: "/wallpaper2.jpg",
+    img: "/wallpaper2.png",
     title: ""
   },
   {
-    img: "/wallpaper3.jpg",
+    img: "/wallpaper3.png",
     title: ""
   },
   {
-    img: "/wallpaper4.jpg",
+    img: "/wallpaper4.png",
     title: ""
   },
   {
-    img: "/wallpaper5.jpg",
+    img: "/wallpaper5.png",
     title: ""
   },
   {
-    img: "/wallpaper6.jpg",
+    img: "/wallpaper6.png",
     title: ""
   }
 ];
