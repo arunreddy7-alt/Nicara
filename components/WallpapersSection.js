@@ -52,7 +52,7 @@ export default function WallpapersSection() {
                   src={item.img}
                   alt={item.title || "Wallpaper"}
                   fill
-                  style={{ objectFit: 'cover', borderRadius: '0.5rem' }}
+                  style={{ objectFit: 'cover', borderRadius: '0rem' }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
               </Link>
